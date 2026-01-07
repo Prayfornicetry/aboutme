@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prayfornicetry</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-brand">Prayfornicetry</div>
+    <ul class="nav-menu">
+      <li><a href="#aboutme">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certification">Certification</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="img/1.jpeg" alt="Foto Profil" class="profile-img" />
+      <h1 class="fade-in">Halo, Saya Praya Raditya</h1>
+      <p class="fade-in delay-1">Seorang Pelawak Dan Progammer Dadakan</p>
+      <p class="fade-in delay-1">"Dunia ini indah karena penuh warna, perbedaan, dan kesempatan. Selama kita mau membuka mata dan hati, selalu ada hal kecil yang layak disyukuri dan membuat hidup terasa berarti."</p>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="aboutme" class="section">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-text">
+      Haloo, perkenalkan nama saya Praya Raditya biasa dipanggil Praya, saya berasal dari Bantul, Yogyakarta, Indonesia, 
+      saya kelahiran tahun 2008 tepatnya pada tanggal 29 bulan september, saya seorang pengembang web dengan fokus pada Laravel, desain UI/UX yang intuitif,
+      dan analisis sistem berbasis data. Saya percaya teknologi harus selaras dengan kebutuhan manusia
+      dan alam — sederhana, efisien, dan bermakna.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2 class="section-title">Keahlian</h2> 
+    <p class="section-text">pada Keahlian dibidang IT saya mempunyai sesuai dibawah ini, dan masih banyak lagi hehe!</p>
+    <div class="skills-container">
+      <div class="skill-item slide-up">
+        <i class="fas fa-code"></i>
+        <h3>PHP & Laravel</h3>
+      </div>
+      <div class="skill-item slide-up delay-1">
+        <i class="fas fa-paint-brush"></i>
+        <h3>Desain UI/UX</h3>
+      </div>
+      <div class="skill-item slide-up delay-2">
+        <i class="fas fa-chart-line"></i>
+        <h3>Analisis Data & Sistem</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certification -->
+  <section id="certification" class="section">
+    <h2 class="section-title">Certification</h2>
+    <p class="section-text">Alhamdulillah diberi kesempatan untuk menunjukan bakat dan semangat multitalenta yang saya punya hehe!</p>
+    <div class="cert-container">
+      <div class="cert-item fade-in">
+        <img src="img/2.png" alt="Sertifikat 1" />
+      </div>
+      <div class="cert-item fade-in delay-1">
+        <img src="img/3.png" alt="Sertifikat 2" />
+      </div>
+      <div class="cert-item fade-in delay-2">
+        <img src="img/4.png" alt="Sertifikat 3" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact Me</h2>
+    <p class="section-text">Jika ingin menyampaikan pesan atau sesuatu bisa chat di sosial media saya hehe!</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/prayfornicetry/" class="social-icon slide-up"><i class="fab fa-instagram"></i></a>
+      <a href="https://tiktok.com/@pryfornt" class="social-icon slide-up delay-1"><i class="fab fa-tiktok"></i></a>
+      <a href="https://github.com/prayfornicetry" class="social-icon slide-up delay-2"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Prayfornicetry. Dibuat dengan penuh keikhlasan dan penuh kesabaran.</p>
+  </footer>
+
+  <script>
+    // Hamburger Menu Toggle
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking link (mobile)
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
